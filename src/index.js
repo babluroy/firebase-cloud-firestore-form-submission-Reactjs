@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Route, BrowserRouter as Router} from 'react-router-dom'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import FormSubmissions from './Components/FormSubmissions'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+
+const routing = (
+  <Router>
+    <Route exact path="/" component={App}/>
+    <Route path="/submissions" component={FormSubmissions}/>
+  </Router>
+)
+
+ReactDOM.render(routing,
   document.getElementById('root')
 );
 

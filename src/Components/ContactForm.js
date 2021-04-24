@@ -41,12 +41,12 @@ export default function ContactForm() {
 
     <Form.Group controlId="formBasicName">
     <Form.Label>Name</Form.Label>
-    <Form.Control type="Name" placeholder="Name" value={name} onChange={(e)=>setName(e.target.value)}/>
+    <Form.Control type="Name" placeholder="Name" value={name} onChange={(e)=>setName(e.target.value)} required/>
   </Form.Group>
 
   <Form.Group controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
+    <Form.Control type="email" placeholder="Enter email" value={email} onChange={(e)=>setEmail(e.target.value)} required/>
     <Form.Text className="text-muted">
       We'll never share your email with anyone else.
     </Form.Text>
@@ -54,7 +54,7 @@ export default function ContactForm() {
 
   <Form.Group controlId="formBasicCountry">
     <Form.Label>Country</Form.Label>
-    <Form.Control type="text" placeholder="Country" value={country} onChange={(e)=>setCountry(e.target.value)}/>
+    <Form.Control type="text" placeholder="Country" value={country} onChange={(e)=>setCountry(e.target.value)} required/>
   </Form.Group>
 
   <Button variant="primary" type="submit" style={{background : loader ? "#ccc": ""}}>
