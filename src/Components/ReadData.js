@@ -31,7 +31,6 @@ function ReadData() {
     <div>
     <h1 className="text-center">Form Submissions</h1>
       {contact.map((data) => (
-        //replace this key 
         <div key={uuidv4()}>
           <Container className="mt-3 my-3">
           <CardGroup>
