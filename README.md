@@ -1,7 +1,5 @@
 # Firebase Cloud Firestore Read and Write Data
 
-Demo: https://mygitapp-ee68c.web.app/
-
 To-Do:
 
 1. Install Node Modules
